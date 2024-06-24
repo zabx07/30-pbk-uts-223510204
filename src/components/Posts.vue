@@ -73,7 +73,7 @@ body {
 /* Header Styles */
 h1 {
   font-size: 2em;
-  color: #444;
+  color: #0d56f4;
   text-align: center;
   margin-top: 20px;
 }

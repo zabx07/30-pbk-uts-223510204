@@ -122,7 +122,7 @@ li {
 
 input[type="checkbox"] {
   margin-right: 10px;
-  accent-color: #4caf50;
+  accent-color: #0a038e;
 }
 
 .completed {
@@ -133,7 +133,7 @@ input[type="checkbox"] {
 button {
   margin-left: 10px;
   padding: 5px 10px;
-  background-color: #4caf50;
+  background-color: #210160;
   color: white;
   border: none;
   border-radius: 5px;

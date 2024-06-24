@@ -30,7 +30,7 @@ export default {
 button {
   margin: 5px;
   padding: 10px 20px;
-  background-color: #4caf50;
+  background-color: #1d0377;
   color: white;
   border: none;
   border-radius: 5px;
@@ -38,6 +38,6 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #e7edf1;
 }
 </style>
