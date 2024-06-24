@@ -1,38 +1,24 @@
 <template>
   <div>
     <div class="button-container">
-      <button @click="showView('todos')">Todos</button>
-      <button @click="showView('posts')">Posts</button>
+      <router-link to="/todos">
+        <button>Todos</button>
+      </router-link>
+      <router-link to="/posts">
+        <button>Posts</button>
+      </router-link>
+      <router-link to="/albums">
+        <button>Albums</button>
+      </router-link>
     </div>
-    <div v-if="currentView === 'todos'">
-      <Todos />
-    </div>
-    <div v-if="currentView === 'posts'">
-      <Posts />
-    </div>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Todos from './components/Todos.vue'
-import Posts from './components/Posts.vue'
-
 export default {
-  data() {
-    return {
-      currentView: null
-    }
-  },
-  methods: {
-    showView(view) {
-      this.currentView = view
-    }
-  },
-  components: {
-    Todos,
-    Posts
-  }
-}
+  name: "App",
+};
 </script>
 
 <style>
@@ -44,7 +30,7 @@ export default {
 button {
   margin: 5px;
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 5px;
